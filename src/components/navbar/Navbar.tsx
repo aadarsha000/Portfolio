@@ -57,7 +57,7 @@ const Navbar = () => {
           className="rounded-full bg-[#9747ff] px-[24px] py-[16px] text-[16px] font-[500] text-[#fff]"
           href=""
         >
-          Let's Talk
+          Let&apos;s Talk
         </a>
       </div>
       {/* mobile navbar */}
@@ -73,7 +73,7 @@ const Navbar = () => {
           className="rounded-full bg-[#9747ff] px-[24px] py-[16px] text-[16px] font-[500] text-[#fff]"
           href=""
         >
-          Let's Talk
+          Let&apos;s Talk
         </a>
       </div>
       {/* overlay */}

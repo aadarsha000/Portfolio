@@ -16,13 +16,13 @@ const HeroSection = () => {
     "NextJs",
   ];
   const skill_logos = [
-    <FaPython className="text-white" />,
-    <SiDjango className="text-white" />,
-    <SiFastapi className="text-white" />,
-    <SiFlask className="text-white" />,
-    <TbBrandJavascript className="text-white" />,
-    <SiReact className="text-white" />,
-    <TbBrandNextjs className="text-white" />,
+    <FaPython key={1} className="text-white" />,
+    <SiDjango key={2} className="text-white" />,
+    <SiFastapi key={3} className="text-white" />,
+    <SiFlask key={4} className="text-white" />,
+    <TbBrandJavascript key={5} className="text-white" />,
+    <SiReact key={6} className="text-white" />,
+    <TbBrandNextjs key={7} className="text-white" />,
   ];
   return (
     <div className="grid grid-cols-1 gap-2 lg:grid-cols-6 lg:gap-2 mt-[30px]">
@@ -47,7 +47,7 @@ const HeroSection = () => {
                   href=""
                   className="flex items-center rounded-lg bg-[#9747ff] px-[24px] py-[12px] text-base font-[500] text-[#fff]"
                 >
-                  <span className="mr-1">I'm Aadarsha</span>
+                  <span className="mr-1">I&apos;m Aadarsha</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 256 256"
@@ -258,7 +258,7 @@ const HeroSection = () => {
               </div>
               <div className="mt-[44px] flex items-center justify-around align-middle">
                 <h2 className="text-[40px] font-[600] text-[#fff]">
-                  Things I'm good at
+                  Things I&apos;m good at
                 </h2>
                 <img src="https://i.ibb.co/K7kr1tq/thumbup.png" alt="" />
               </div>
