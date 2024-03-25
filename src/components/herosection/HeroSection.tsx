@@ -143,7 +143,7 @@ const HeroSection = () => {
                 <div className="text-base font-[500] leading-[150%] text-[#ffff]">
                   <span>Get in touch</span>
                 </div>
-                <a className="h-[44px] w-[80px]" href="">
+                <a className="h-[44px] w-[80px]" href="/contact">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={70}
@@ -366,7 +366,7 @@ const HeroSection = () => {
                 <div className="text-base font-[500] leading-[150%] text-[#ffff]">
                   <span>Get in touch</span>
                 </div>
-                <a className="h-[44px] w-[80px]" href="">
+                <a className="h-[44px] w-[80px]" href="/contact">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={70}
@@ -426,7 +426,7 @@ const HeroSection = () => {
               <div className="text-base font-[500] leading-[150%] text-[#ffff]">
                 <span>Get in touch</span>
               </div>
-              <a className="h-[44px] w-[80px]" href="">
+              <a className="h-[44px] w-[80px]" href="/contact">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width={70}

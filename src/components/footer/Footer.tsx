@@ -31,7 +31,7 @@ const Footer = () => {
         <li>
           <Link
             className="text-[14px] md:text-[18px] font-[500] text-[#fff] hover:text-[#9747ff]"
-            href=""
+            href="/contact"
           >
             Contact
           </Link>

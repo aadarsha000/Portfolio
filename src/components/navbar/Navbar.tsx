@@ -18,7 +18,7 @@ const Navbar = () => {
     <div className="mt-[40px]">
       <div className="hidden items-center justify-between rounded-lg border border-[#2b2b2b] bg-[#2b2b2b] px-[16px] py-[24px] md:flex">
         <div>
-          <Link className="text-[32px] font-[600] text-[#fff]" href="">
+          <Link className="text-[32px] font-[600] text-[#fff]" href="/">
             Aadarsha<span className="text-[#9747ff]">K</span>
           </Link>
         </div>
@@ -50,7 +50,7 @@ const Navbar = () => {
           <li>
             <Link
               className="text-[18px] font-[500] text-[#fff] hover:text-[#9747ff]"
-              href=""
+              href="/contact"
             >
               Contact
             </Link>
@@ -58,7 +58,7 @@ const Navbar = () => {
         </ul>
         <Link
           className="rounded-full bg-[#9747ff] px-[24px] py-[16px] text-[16px] font-[500] text-[#fff]"
-          href=""
+          href="/contact"
         >
           Let&apos;s Talk
         </Link>
@@ -74,7 +74,7 @@ const Navbar = () => {
         </div>
         <Link
           className="rounded-full bg-[#9747ff] px-[24px] py-[16px] text-[16px] font-[500] text-[#fff]"
-          href=""
+          href="/contact"
         >
           Let&apos;s Talk
         </Link>
@@ -125,7 +125,7 @@ const Navbar = () => {
           <li className="hover:text-[#9747ff]">
             <Link
               className="text-[18px] font-[500] text-[#fff] hover:text-[#9747ff]"
-              href=""
+              href="/contact"
             >
               Contact
             </Link>
