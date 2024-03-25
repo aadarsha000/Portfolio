@@ -1,44 +1,46 @@
+import Link from "next/link";
+
 const Footer = () => {
   return (
     <div className="items-center justify-between rounded-lg px-[16px] py-[40px] mt-[40px] md:flex md:flex-row-reverse">
       <ul className="flex flex-wrap md:flex-nowrap">
-        <li className="mr-[40px]">
-          <a
-            className="text-[18px] font-[500] text-[#fff] hover:text-[#9747ff]"
-            href=""
+        <li className="mr-[20px] md:mr-[40px]">
+          <Link
+            className="text-[14px] md:text-[18px] font-[500] text-[#fff] hover:text-[#9747ff]"
+            href="/"
           >
             Home
-          </a>
+          </Link>
         </li>
-        <li className="mr-[40px]">
-          <a
-            className="text-[18px] font-[500] text-[#fff] hover:text-[#9747ff]"
+        <li className="mr-[20px] md:mr-[40px]">
+          <Link
+            className="text-[14px] md:text-[18px] font-[500] text-[#fff] hover:text-[#9747ff]"
             href=""
           >
             About
-          </a>
+          </Link>
         </li>
-        <li className="mr-[40px]">
-          <a
-            className="text-[18px] font-[500] text-[#fff] hover:text-[#9747ff]"
+        <li className="mr-[20px] md:mr-[40px]">
+          <Link
+            className="text-[14px] md:text-[18px] font-[500] text-[#fff] hover:text-[#9747ff]"
             href=""
           >
             Blog
-          </a>
+          </Link>
         </li>
         <li>
-          <a
-            className="text-[18px] font-[500] text-[#fff] hover:text-[#9747ff]"
+          <Link
+            className="text-[14px] md:text-[18px] font-[500] text-[#fff] hover:text-[#9747ff]"
             href=""
           >
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
       <div className="text-center">
-        <a className="text-[18px] font-[500] text-[#fff]" href="">
+        <Link className="text-[18px] font-[500] text-[#fff]" href="">
           Copyright @ 2024 <span className="text-[#9747ff]">Aadarsha</span>
-        </a>
+        </Link>
       </div>
     </div>
   );

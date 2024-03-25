@@ -1,11 +1,15 @@
+"use client";
 import { FaPython } from "react-icons/fa6";
 import { SiDjango, SiFlask, SiFastapi, SiReact } from "react-icons/si";
 import { TbBrandJavascript, TbBrandNextjs } from "react-icons/tb";
 import Image from "next/image";
 import { CiLinkedin } from "react-icons/ci";
 import { SiGithub } from "react-icons/si";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const HeroSection = () => {
+  const router = useRouter();
   const skills = [
     "Python",
     "Django",
@@ -36,15 +40,16 @@ const HeroSection = () => {
                   src="https://bentox-vue.vercel.app/assets/bio-round-text-Bub6T51j.png"
                   alt=""
                 />
+                <div></div>
                 <img
                   className="absolute left-[15%] top-[12%] lg:left-[10%] lg:top-[10%] w-[150px] rounded-full bg-[#9747ff]"
-                  src="https://lh3.googleusercontent.com/a/ACg8ocJG3s6Z_jmYyZfAiJ8QGNYiLF09Swx2tMEF9mzL2IJ1QQ=s288-c-no"
+                  src="/assests/profile.png"
                   alt=""
                 />
               </div>
               <div className="mt-[32px] flex items-center justify-center">
-                <a
-                  href=""
+                <Link
+                  href="/about"
                   className="flex items-center rounded-lg bg-[#9747ff] px-[24px] py-[12px] text-base font-[500] text-[#fff]"
                 >
                   <span className="mr-1">I&apos;m Aadarsha</span>
@@ -60,13 +65,13 @@ const HeroSection = () => {
                       <path d="M227.32,28.68a16,16,0,0,0-15.66-4.08l-.15,0L19.57,82.84a16,16,0,0,0-2.42,29.84l85.62,40.55,40.55,85.62A15.86,15.86,0,0,0,157.74,248q.69,0,1.38-.06a15.88,15.88,0,0,0,14-11.51l58.2-191.94c0-.05,0-.1,0-.15A16,16,0,0,0,227.32,28.68ZM157.83,231.85l-.05.14L118.42,148.9l47.24-47.25a8,8,0,0,0-11.31-11.31L107.1,137.58,24,98.22l.14,0L216,40Z" />
                     </g>
                   </svg>
-                </a>
+                </Link>
               </div>
               <div className="mt-[29px] flex items-center justify-between">
                 <div className="text-base font-[500] leading-[150%] text-[#ffff]">
                   <span>Biography</span>
                 </div>
-                <a className="h-[44px] w-[80px]" href="">
+                <Link className="h-[44px] w-[80px]" href="/about">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={70}
@@ -83,7 +88,7 @@ const HeroSection = () => {
                       fill="white"
                     />
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -179,7 +184,7 @@ const HeroSection = () => {
                 <div className="text-base font-[500] leading-[150%] text-[#ffff]">
                   <span>Profiles</span>
                 </div>
-                <a className="h-[44px] w-[80px]" href="">
+                <Link className="h-[44px] w-[80px]" href="/about">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={70}
@@ -196,7 +201,7 @@ const HeroSection = () => {
                       fill="white"
                     />
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -207,51 +212,62 @@ const HeroSection = () => {
               </span>
               <div className="mt-[40px] flex justify-between">
                 <div className="items-center">
-                  <Image
-                    src="/assests/pen.png"
-                    width={53}
-                    height={52}
-                    alt="Picture of the author"
-                    className="m-auto"
-                  />
-                  <p className="mt-[16px] text-[16px] font-[300] text-[#fff] opacity-[80%] text-center">
+                  <div className="w-[30px] h-[30px] md:w-[53px] md:h-[52px] relative m-auto">
+                    <Image
+                      src="/assests/pen.png"
+                      fill
+                      style={{ objectFit: "cover" }}
+                      alt="Picture of the author"
+                      className="m-auto"
+                    />
+                  </div>
+                  <p className="mt-[16px] text-[10px] md:text-[16px] font-[300] text-[#fff] opacity-[80%] text-center">
                     UI/UX Design
                   </p>
                 </div>
                 <div className="items-center">
                   <img src="/mobile_development.png" alt="" />
-                  <Image
-                    src="/assests/mobile_development.png"
-                    width={53}
-                    height={52}
-                    alt="Picture of the author"
-                    className="m-auto"
-                  />
-                  <p className="mt-[16px] text-[16px] font-[300] text-[#fff] opacity-[80%] text-center">
+                  <div className="w-[30px] h-[30px] md:w-[53px] md:h-[52px] relative m-auto">
+                    <Image
+                      src="/assests/mobile_development.png"
+                      fill
+                      style={{ objectFit: "cover" }}
+                      alt="Picture of the author"
+                      className="m-auto"
+                    />
+                  </div>
+
+                  <p className="mt-[16px] text-[10px] md:text-[16px] font-[300] text-[#fff] opacity-[80%] text-center">
                     Mobile Development
                   </p>
                 </div>
                 <div className="items-center">
-                  <Image
-                    src="/assests/webdev.png"
-                    width={53}
-                    height={52}
-                    alt="Picture of the author"
-                    className="m-auto"
-                  />
-                  <p className="mt-[16px] text-[16px] font-[300] text-[#fff] opacity-[80%] text-center">
+                  <div className="w-[30px] h-[30px] md:w-[53px] md:h-[52px] relative m-auto">
+                    <Image
+                      src="/assests/webdev.png"
+                      fill
+                      style={{ objectFit: "cover" }}
+                      alt="Picture of the author"
+                      className="m-auto"
+                    />
+                  </div>
+
+                  <p className="mt-[16px] text-[10px] md:text-[16px] font-[300] text-[#fff] opacity-[80%] text-center">
                     Web Development
                   </p>
                 </div>
                 <div className="items-center">
-                  <Image
-                    src="/assests/mobile_development.png"
-                    width={53}
-                    height={52}
-                    alt="Picture of the author"
-                    className="m-auto"
-                  />
-                  <p className="mt-[16px] text-[16px] font-[300] text-[#fff] opacity-[80%] text-center">
+                  <div className="w-[30px] h-[30px] md:w-[53px] md:h-[52px] relative m-auto">
+                    <Image
+                      src="/assests/mobile_development.png"
+                      fill
+                      style={{ objectFit: "cover" }}
+                      alt="Picture of the author"
+                      className="m-auto"
+                    />
+                  </div>
+
+                  <p className="mt-[16px] text-[10px] md:text-[16px] font-[300] text-[#fff] opacity-[80%] text-center">
                     Digital Marketing
                   </p>
                 </div>

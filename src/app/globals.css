@@ -31,3 +31,17 @@ body {
     text-wrap: balance;
   }
 }
+
+@keyframes backgroundSlide {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100vh;
+  }
+}
+
+body {
+  background-image: url("/assests/bg_animate.jpg");
+  animation: backgroundSlide 5s linear infinite;
+}

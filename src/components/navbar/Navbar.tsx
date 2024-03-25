@@ -1,8 +1,11 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const router = useRouter();
   const handleClick = () => {
     setOpen(!open);
     if (open) {
@@ -15,50 +18,50 @@ const Navbar = () => {
     <div className="mt-[40px]">
       <div className="hidden items-center justify-between rounded-lg border border-[#2b2b2b] bg-[#2b2b2b] px-[16px] py-[24px] md:flex">
         <div>
-          <a className="text-[32px] font-[600] text-[#fff]" href="">
+          <Link className="text-[32px] font-[600] text-[#fff]" href="">
             Aadarsha<span className="text-[#9747ff]">K</span>
-          </a>
+          </Link>
         </div>
         <ul className="flex">
           <li className="mr-[40px]">
-            <a
+            <Link
               className="text-[18px] font-[500] text-[#fff] hover:text-[#9747ff]"
-              href=""
+              href="/"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li className="mr-[40px]">
-            <a
+            <Link
               className="text-[18px] font-[500] text-[#fff] hover:text-[#9747ff]"
-              href=""
+              href="/about"
             >
               About
-            </a>
+            </Link>
           </li>
           <li className="mr-[40px]">
-            <a
+            <Link
               className="text-[18px] font-[500] text-[#fff] hover:text-[#9747ff]"
               href=""
             >
               Blog
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               className="text-[18px] font-[500] text-[#fff] hover:text-[#9747ff]"
               href=""
             >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
-        <a
+        <Link
           className="rounded-full bg-[#9747ff] px-[24px] py-[16px] text-[16px] font-[500] text-[#fff]"
           href=""
         >
           Let&apos;s Talk
-        </a>
+        </Link>
       </div>
       {/* mobile navbar */}
       <div className="flex items-center justify-between rounded-lg border bg-[#2b2b2b] px-[16px] py-[24px] border-[#2b2b2b] md:hidden">
@@ -69,12 +72,12 @@ const Navbar = () => {
             <div className="h-[2px] w-full bg-white" />
           </div>
         </div>
-        <a
+        <Link
           className="rounded-full bg-[#9747ff] px-[24px] py-[16px] text-[16px] font-[500] text-[#fff]"
           href=""
         >
           Let&apos;s Talk
-        </a>
+        </Link>
       </div>
       {/* overlay */}
       <div
@@ -90,42 +93,42 @@ const Navbar = () => {
         }`}
       >
         <div className="mt-[32px]">
-          <a className="text-[32px] font-[600] text-[#fff]" href="">
+          <Link className="text-[32px] font-[600] text-[#fff]" href="">
             Aadarsha<span className="text-[#9747ff]">K</span>
-          </a>
+          </Link>
         </div>
         <ul className="flex h-[80%] flex-col justify-around">
           <li className="hover:text-[#9747ff]">
-            <a
+            <Link
               className="text-[18px] font-[500] text-[#fff] hover:text-[#9747ff]"
-              href=""
+              href="/"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li className="hover:text-[#9747ff]">
-            <a
+            <Link
               className="text-[18px] font-[500] text-[#fff] hover:text-[#9747ff]"
-              href=""
+              href="/about"
             >
               About
-            </a>
+            </Link>
           </li>
           <li className="hover:text-[#9747ff]">
-            <a
+            <Link
               className="text-[18px] font-[500] text-[#fff] hover:text-[#9747ff]"
               href=""
             >
               Blog
-            </a>
+            </Link>
           </li>
           <li className="hover:text-[#9747ff]">
-            <a
+            <Link
               className="text-[18px] font-[500] text-[#fff] hover:text-[#9747ff]"
               href=""
             >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
